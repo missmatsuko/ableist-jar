@@ -1,2 +1,16 @@
 // Normalize
 @import '../../node_modules/normalize.css/normalize.css';
+
+// Variables
+$maxWidth: 1200px;
+
+// Base
+body {
+  font-size: 1.3rem;
+}
+
+.contain {
+  max-width: $maxWidth;
+  margin-right: auto;
+  margin-left: auto;
+}
