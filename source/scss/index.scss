@@ -2,15 +2,89 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 // Variables
-$maxWidth: 1200px;
+$max-width-lg: 80rem;
+$max-width-md: 55rem;
+$max-width-sm: 30rem;
+$gutter: 20px;
+
+$color-primary: #019875;
+$color-default: #222;
+$color-white: #fff;
+$color-gray: #eee;
 
 // Base
 body {
   font-size: 1.3rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: $color-default;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+  border-bottom: 2px solid currentColor;
 }
 
 .contain {
-  max-width: $maxWidth;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  &--lg {
+    max-width: $max-width-lg;
+  }
+  &--md {
+    max-width: $max-width-md;
+  }
+  &--sm {
+    max-width: $max-width-sm;
+  }
+}
+
+// Background color
+.bg-dark {
+  background-color: $color-default;
+  color: $color-white;
+}
+
+.bg-primary {
+  background-color: $color-primary;
+}
+
+// Title
+.title {
+
+}
+
+// Layout
+.header {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.main {
+}
+
+.article {
+  padding: 50px 0;
+
+  &__title {
+    margin-top: 1rem;
+  }
+
+  &:nth-child(even) {
+    background-color: $color-gray;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 80%;
+  padding: 20px 0;
+
+  &__title {
+    text-transform: uppercase;
+  }
 }
