@@ -62,18 +62,15 @@ a {
   background-color: $color-primary;
 }
 
-// Title
-.title {
-
-}
-
 // Layout
 .header {
-  padding: 50px 0;
+  padding: 50px 0 0;
   text-align: center;
-}
 
-.main {
+  img {
+    max-width: 400px;
+    margin-bottom: -10%;
+  }
 }
 
 .article {
