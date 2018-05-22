@@ -7,7 +7,8 @@ $max-width-md: 55rem;
 $max-width-sm: 30rem;
 $gutter: 20px;
 
-$color-primary: rgb(73, 174, 237);
+$color-primary: #49AEED;
+$color-secondary: #22506D;
 $color-default: #222;
 $color-white: #fff;
 $color-gray: #eee;
@@ -22,8 +23,16 @@ body {
 
 a {
   text-decoration: none;
-  color: $color-primary;
+  color: $color-secondary;
+  border: 2px solid transparent;
   border-bottom: 2px solid currentColor;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: currentColor;
+    background-color: white;
+  }
 }
 
 .contain {
@@ -60,7 +69,7 @@ a {
 
 // Layout
 .header {
-  padding: 200px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -83,6 +92,10 @@ a {
   text-align: center;
   font-size: 80%;
   padding: 20px 0;
+
+  a {
+    color: $color-primary;
+  }
 
   &__title {
     text-transform: uppercase;
