@@ -1,0 +1,19 @@
+{
+  "name": "ableist-jar",
+  "description": "Static landing page for http://ableist.is/",
+  "repository": "git@github.com:missmatsuko/ableist-jar.git",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^8.0.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
+  },
+  "scripts": {
+    "build": "webpack --progress",
+    "start": "webpack --watch"
+  }
+}
